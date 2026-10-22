@@ -1,0 +1,29 @@
+{
+  "version": "2.6.2",
+  "release_version": "1.0",
+  "released_at": "2026-10-22",
+  "summary": {
+    "title": "DeepLook - Threat Model",
+    "owner": "Luis Garcia",
+    "description": "App de escritorio para relevamiento de cámaras y seguimiento vehicular - uso forense policial",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Arquitectura DeepLook",
+        "diagramType": "STRIDE",
+        "placeholder": "Descripción de nuevo diagrama STRIDE",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": [],
+        "description": "Flujo de datos: búsqueda de cámaras, rutas y seguimiento vehicular"
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
