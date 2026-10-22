@@ -150,8 +150,8 @@
                 "text": "DeepLook App"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -248,12 +248,99 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "2a2edb84-9c36-4a58-afd3-174fa19853dd",
+                  "title": "Escalada de privilegios vía la app de escritorio",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Elevation of privilege / Elevación de privilegios",
+                  "description": "Si DeepLook corre con permisos elevados (ej. administrador) para acceder a ciertos recursos del sistema, una vulnerabilidad en el código (ej. en el manejo de PySide6/Flask) podría ser explotada para ejecutar comandos con esos mismos privilegios elevados en el equipo.",
+                  "mitigation": "Ejecutar la app con el mínimo privilegio necesario (usuario estándar, no administrador), validar y sanitizar toda entrada externa (CSV, respuestas de API), y mantener actualizadas las dependencias (Flask, PySide6) para evitar vulnerabilidades conocidas.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                },
+                {
+                  "id": "66c9836d-de4e-4429-b3d4-c1162b1bf02e",
+                  "title": "Suplantación del investigador que opera la app",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing / Spoofing",
+                  "description": "Si la app DeepLook no valida quién la está ejecutando, cualquier persona con acceso físico a la PC o al ejecutable podría hacerse pasar por un investigador autorizado y consultar datos sensibles de causas en curso.",
+                  "mitigation": "Agregar autenticación local (usuario/contraseña, PIN o doble factor de autenticacion) antes de abrir la app, y registrar quién la usa (logging de accesos). ",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                },
+                {
+                  "id": "d0fbae15-84c3-42d2-98a8-ed1c5a210079",
+                  "title": "Manipulación de archivos CSV de cámaras",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering / Manipulación",
+                  "description": "Si los archivos CSV con las fuentes oficiales de cámaras no tienen control de integridad, alguien con acceso al sistema de archivos podría modificar, borrar o insertar registros falsos, afectando la validez de la evidencia en una causa judicial.",
+                  "mitigation": "Calcular y verificar hash (ej. SHA-256) de los CSV al cargarlos, restringir permisos de escritura del archivo, y mantener un log de cambios con fecha/hora.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                },
+                {
+                  "id": "1405fc34-6454-4660-9fa9-8b8b74e38d78",
+                  "title": "Falta de trazabilidad de consultas realizadas",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation / Repudiación",
+                  "description": "Si la app no registra qué investigador hizo qué búsqueda y cuándo, un usuario podría negar haber consultado o exportado cierta información, lo cual es crítico en un contexto forense donde la cadena de custodia debe ser verificable.",
+                  "mitigation": "Implementar logging de auditoría: usuario, acción, fecha/hora y resultado de cada búsqueda o exportación, almacenado de forma que no pueda ser alterado por el propio usuario.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                },
+                {
+                  "id": "aa6d617b-f7e8-4b83-b433-457788a51db8",
+                  "title": "Exposición de datos sensibles de investigaciones",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure / Brecha de información",
+                  "description": "Los CSV y datos GPS pueden contener información de causas en curso (ubicaciones, vehículos, cámaras relevadas). Si la app no cifra estos archivos en reposo, cualquiera con acceso al disco (robo del equipo, backup mal gestionado, malware) podría leer datos de investigaciones sin autorización.",
+                  "mitigation": "Cifrar los archivos CSV y de GPS en reposo (ej. AES-256), cifrar el disco completo del equipo (BitLocker/LUKS), y no enviar estos datos a servicios externos sin anonimizar.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                },
+                {
+                  "id": "46630b01-3eca-4014-95d7-e9630a2afc07",
+                  "title": "Indisponibilidad por sobrecarga de consultas a OSM/Overpass",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service / Denegación de servicio",
+                  "description": "La app depende de la API externa de OSM/Overpass para datos geográficos. Si hay muchas consultas simultáneas o la API externa tiene límites de uso (rate limiting), DeepLook podría quedar sin respuesta justo durante un relevamiento urgente en campo.",
+                  "mitigation": "Implementar caché local de resultados ya consultados, manejar reintentos con backoff, y tener un modo offline con los datos ya descargados para no depender 100% de la conexión a internet.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 1
+              }
             }
           },
           {
@@ -868,6 +955,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 6
   }
 }
