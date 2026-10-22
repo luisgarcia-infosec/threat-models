@@ -18,7 +18,851 @@
         "placeholder": "Descripción de nuevo diagrama STRIDE",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.6.2",
-        "cells": [],
+        "cells": [
+          {
+            "position": {
+              "x": 120,
+              "y": 280
+            },
+            "size": {
+              "width": 150,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Investigador DICCO"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "a81235c5-ef38-4f38-a27e-956ba396bbc0"
+                },
+                {
+                  "group": "right",
+                  "id": "f9278226-3fc6-431d-8dbc-02081483184a"
+                },
+                {
+                  "group": "bottom",
+                  "id": "f1a7eead-b485-4d58-bbe1-06400d199fed"
+                },
+                {
+                  "group": "left",
+                  "id": "05f04cb6-ece7-49e4-8a6e-0770cddef8a2"
+                }
+              ]
+            },
+            "id": "7da20e97-3bdc-4e24-a156-9922ed4a9421",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Investigador DICCO",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 480,
+              "y": 250
+            },
+            "size": {
+              "width": 100,
+              "height": 120
+            },
+            "attrs": {
+              "text": {
+                "text": "DeepLook App"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "225f6c84-d635-45b4-bd28-fc07fd7a8e35"
+                },
+                {
+                  "group": "right",
+                  "id": "fc303c2d-fbb1-4151-8f63-db05e0e22f37"
+                },
+                {
+                  "group": "bottom",
+                  "id": "959e3f2f-9351-4eca-accd-f9741da2be16"
+                },
+                {
+                  "group": "left",
+                  "id": "e50e7d6c-c3ce-46c1-afc7-b5ec667ea8ea"
+                }
+              ]
+            },
+            "id": "3899564e-3859-4ce8-8423-80b7a9f792af",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Process",
+              "name": "DeepLook App",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Consulta de cámaras/rutas",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "Local/IPC",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Consulta de cámaras/rutas"
+            ],
+            "id": "72dac2ab-153b-4f5a-8b49-39058fd9efc5",
+            "source": {
+              "cell": "7da20e97-3bdc-4e24-a156-9922ed4a9421",
+              "port": "f9278226-3fc6-431d-8dbc-02081483184a"
+            },
+            "target": {
+              "cell": "3899564e-3859-4ce8-8423-80b7a9f792af",
+              "port": "e50e7d6c-c3ce-46c1-afc7-b5ec667ea8ea"
+            },
+            "vertices": [
+              {
+                "x": 320,
+                "y": 390
+              },
+              {
+                "x": 460,
+                "y": 390
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Lectura/escritura CSV",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Lectura/escritura CSV"
+            ],
+            "id": "2070aa9b-8fb3-47b8-9074-5901da483b56",
+            "source": {
+              "cell": "3899564e-3859-4ce8-8423-80b7a9f792af",
+              "port": "959e3f2f-9351-4eca-accd-f9741da2be16"
+            },
+            "target": {
+              "cell": "5cb3fdcb-3993-4554-9e7b-cc955dd981b4",
+              "port": "aa9f64ec-deb1-4c58-98f6-9367a3d062b6"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Consulta geográfica (internet)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": true,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "4f0f3481-92c9-4cbc-a77d-05af03998fef"
+              ]
+            },
+            "labels": [
+              "Consulta geográfica (internet)"
+            ],
+            "id": "7b97aa38-a729-48fa-bf9a-03f67588c70d",
+            "source": {
+              "cell": "3899564e-3859-4ce8-8423-80b7a9f792af",
+              "port": "225f6c84-d635-45b4-bd28-fc07fd7a8e35"
+            },
+            "target": {
+              "cell": "c3660d4e-2955-41f4-817d-97f5a4c36ece",
+              "port": "05f04cb6-ece7-49e4-8a6e-0770cddef8a2"
+            },
+            "vertices": [
+              {
+                "x": 740,
+                "y": 280
+              }
+            ]
+          },
+          {
+            "position": {
+              "x": 425,
+              "y": 560
+            },
+            "size": {
+              "width": 210,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "CSV Cámaras (fuentes oficiales)"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "aa9f64ec-deb1-4c58-98f6-9367a3d062b6"
+                },
+                {
+                  "group": "right",
+                  "id": "423923c2-7d49-4bb0-a6f3-78b5926dd999"
+                },
+                {
+                  "group": "bottom",
+                  "id": "edcee06b-a7d1-495e-9901-471145cc6249"
+                },
+                {
+                  "group": "left",
+                  "id": "392147e0-f5b5-42d6-84e7-f6df52b820e7"
+                }
+              ]
+            },
+            "id": "5cb3fdcb-3993-4554-9e7b-cc955dd981b4",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Store",
+              "name": "CSV Cámaras (fuentes oficiales)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 753,
+              "y": 560
+            },
+            "size": {
+              "width": 170,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Datos GPS vehículos"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "aa9f64ec-deb1-4c58-98f6-9367a3d062b6"
+                },
+                {
+                  "group": "right",
+                  "id": "423923c2-7d49-4bb0-a6f3-78b5926dd999"
+                },
+                {
+                  "group": "bottom",
+                  "id": "edcee06b-a7d1-495e-9901-471145cc6249"
+                },
+                {
+                  "group": "left",
+                  "id": "392147e0-f5b5-42d6-84e7-f6df52b820e7"
+                }
+              ]
+            },
+            "id": "3f119c11-7378-4f58-89a2-43e53301137b",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Store",
+              "name": "Datos GPS vehículos",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 13,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Carga de coordenadas GPS",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Carga de coordenadas GPS"
+            ],
+            "id": "4d258b8c-54c2-4f1a-8ef7-22b563f84965",
+            "source": {
+              "x": 580,
+              "y": 310
+            },
+            "target": {
+              "cell": "3f119c11-7378-4f58-89a2-43e53301137b",
+              "port": "aa9f64ec-deb1-4c58-98f6-9367a3d062b6"
+            }
+          },
+          {
+            "position": {
+              "x": 944,
+              "y": 280
+            },
+            "size": {
+              "width": 210,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "OSM / Overpass API (externo)"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "a81235c5-ef38-4f38-a27e-956ba396bbc0"
+                },
+                {
+                  "group": "right",
+                  "id": "f9278226-3fc6-431d-8dbc-02081483184a"
+                },
+                {
+                  "group": "bottom",
+                  "id": "f1a7eead-b485-4d58-bbe1-06400d199fed"
+                },
+                {
+                  "group": "left",
+                  "id": "05f04cb6-ece7-49e4-8a6e-0770cddef8a2"
+                }
+              ]
+            },
+            "id": "c3660d4e-2955-41f4-817d-97f5a4c36ece",
+            "zIndex": 14,
+            "data": {
+              "type": "tm.Actor",
+              "name": "OSM / Overpass API (externo)",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 15,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Límite: Red local / Internet",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "7b97aa38-a729-48fa-bf9a-03f67588c70d"
+              ],
+              "containedElements": [
+                "c3660d4e-2955-41f4-817d-97f5a4c36ece"
+              ]
+            },
+            "labels": [
+              "Límite: Red local / Internet"
+            ],
+            "id": "4f0f3481-92c9-4cbc-a77d-05af03998fef",
+            "source": {
+              "x": 580,
+              "y": 280
+            },
+            "target": {
+              "x": 1160,
+              "y": 560
+            },
+            "vertices": [
+              {
+                "x": 1000,
+                "y": 450
+              }
+            ]
+          }
+        ],
         "description": "Flujo de datos: búsqueda de cámaras, rutas y seguimiento vehicular"
       }
     ],
